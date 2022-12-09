@@ -1,24 +1,24 @@
 class script(object):
     START_TXT = """Hello {},
-Myself <a href=https://t.me/{}>{}</a>,\n\nTrust me ! I can't even imagine how super-fast i can drive your Database channel \n\nAre you ready for Long Drive Baby...🤪"""
+𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>,\n\nमैं आपको मूवीज खोजने में कम समय और मेहनत में सटीक परिणाम देने के लिए समक्ष हूं...🤪"""
     HELP_TXT = """𝙷𝙴𝚈 {}
-Here is the help for my COMMANDS."""
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/LazyDeveloper>LazyDeveloper</a>
-✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
+𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
+    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: ᏒᏗᏕᏂᎷᎥ
+✯ 𝙂𝙍𝙊𝙐𝙋: <a href=https://t.me/Filmykeedha_ask>𝐅𝐢𝐥𝐦𝐲𝐤𝐞𝐞𝐝𝐡𝐚_𝐚𝐬𝐤</a>
+✯ 𝙈𝘼𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇: <a href=https://t.me/Filmykeedha>𝐅𝐢𝐥𝐦𝐲𝐤𝐞𝐞𝐝𝐡𝐚</a>
+✯ 𝘾𝙍𝙀𝘼𝙏𝙀𝙍: <a href=https://t.me/pankaj_patel_p>Ꭾᥲᥒⲕᥲ၂👮🏼❤️🚔</a>
+✯ 𝗠𝗼𝘃𝗶𝗲 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲:𝐇𝐢𝐧𝐝𝐢, 𝐄𝐧𝐠𝐥𝐢𝐬𝐡, 𝐓𝐚𝐦𝐢𝐥 𝐀𝐧𝐝 𝐌𝐚𝐧𝐲 𝐌𝐨𝐫𝐞 𝐌𝐨𝐯𝐢𝐞 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞
+✯ 𝗕𝗼𝘁 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲: 𝐇𝐢𝐧𝐝𝐢 𝐚𝐧𝐝 𝐄𝐧𝐠𝐥𝐢𝐬𝐡
+✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: V1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
     SOURCE_TXT = """<b>NOTE:</b>
-- Lazy Princess is an open source project. 
-- Source - https://github.com/LazyDeveloperr/LazyPrincess  
+- ᏒᏗᏕᏂᎷᎥ is an open source project. 
+-   
 
 <b>DEVS:</b>
-- <a href=https://t.me/LazyDeveloper>LazyDeveloper</a>"""
+- <a href=https://t.me/pankaj_patel_p>Ꭾᥲᥒⲕᥲ၂👮🏼❤️🚔</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and LazyPriness will respond whenever that keyword hits the message
+- Filter is the feature were users can set automated replies for a particular keyword and ᏒᏗᏕᏂᎷᎥ will respond whenever that keyword hits the message
 
 <b>NOTE:</b>
 1. BOT should have admin privillage.
@@ -40,7 +40,7 @@ Here is the help for my COMMANDS."""
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/LazyDeveloper)</code>
+<code>[Button Text](buttonurl:https://t.me/Filmykeedha)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
@@ -67,7 +67,7 @@ Here is the help for my COMMANDS."""
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
-these are the extra features of Lazy Princess
+these are the extra features of ᏒᏗᏕᏂᎷᎥ
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specified user.</code>
