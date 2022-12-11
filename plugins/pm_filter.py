@@ -612,7 +612,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('♥️ 𝚃𝚑𝚊𝚗𝚔 𝚈𝚘𝚞  @Filmykeedha ♥️')
+    await query.answer('♥️ 𝘠𝘰𝘶𝘳 𝘚𝘦𝘵𝘵𝘪𝘯𝘨𝘴 𝘏𝘢𝘴 𝘉𝘦𝘦𝘯 𝘜𝘱𝘥𝘢𝘵𝘦𝘥 @Filmykeedha ♥️')
 
 
 async def auto_filter(client, msg, spoll=False):
@@ -708,7 +708,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Baby, Here is what i found for your query {search}"
+        cap = f"Baby {u.mention}, Here is what i found for your query {search}"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
