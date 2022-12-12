@@ -764,7 +764,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("𝐇𝐞𝐲 {u.mention}! 𝐌𝐮𝐣𝐡𝐞 𝐢𝐬 𝐧𝐚𝐚𝐦 𝐬𝐞 𝐤𝐨𝐢 𝐦𝐨𝐯𝐢𝐞 𝐧𝐡𝐢 𝐦𝐢𝐥𝐢, 𝐌𝐮𝐣𝐡𝐞 𝐥𝐠𝐭𝐚 𝐡𝐚𝐢 𝐤𝐢 𝐚𝐚𝐩𝐧𝐞 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐠𝐚𝐥𝐚𝐭 𝐥𝐢𝐤𝐡 𝐝𝐢𝐢 𝐡 !\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐨𝐧𝐜𝐞 𝐚𝐠𝐚𝐢𝐧 ... 𝐨𝐫 \n 𝐉𝐨𝐢𝐧 @Filmykeedha ",
+        k = await msg.reply("𝐇𝐞𝐲 {u.mention}! 𝐌𝐮𝐣𝐡𝐞 𝐢𝐬 𝐧𝐚𝐚𝐦 𝐬𝐞 𝐤𝐨𝐢 𝐦𝐨𝐯𝐢𝐞 𝐧𝐡𝐢 𝐦𝐢𝐥𝐢, 𝐌𝐮𝐣𝐡𝐞 𝐥𝐠𝐭𝐚 𝐡𝐚𝐢 𝐤𝐢 𝐚𝐚𝐩𝐧𝐞 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐠𝐚𝐥𝐚𝐭 𝐥𝐢𝐤𝐡 𝐝𝐢𝐢 𝐡 !\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐨𝐧𝐜𝐞 𝐚𝐠𝐚𝐢𝐧 ... 𝐨𝐫 \n 𝐉𝐨𝐢𝐧 @Filmykeedha "),
         await asyncio.sleep(8)
         await k.delete()
         return
