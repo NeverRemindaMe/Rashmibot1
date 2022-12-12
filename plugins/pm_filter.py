@@ -144,7 +144,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('😒 {u.mention} currently unavailable ! we are really sorry for inconvenience !\n Please sent this Movie or Webseries name in #Request Topic or sent using "#Request Movie Name & Release Year.\n our great admins will upload it as soon as possible !')
+            k = await query.message.edit(' 𝐜𝐮𝐫𝐫𝐞𝐧𝐭𝐥𝐲 𝐮𝐧𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 ! 𝐰𝐞 𝐚𝐫𝐞 𝐫𝐞𝐚𝐥𝐥𝐲 𝐬𝐨𝐫𝐫𝐲 𝐟𝐨𝐫 𝐢𝐧𝐜𝐨𝐧𝐯𝐞𝐧𝐢𝐞𝐧𝐜𝐞 !\n 𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐭 𝐭𝐡𝐢𝐬 𝐌𝐨𝐯𝐢𝐞 𝐨𝐫 𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬 𝐧𝐚𝐦𝐞 𝐢𝐧 #𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐓𝐨𝐩𝐢𝐜 𝐨𝐫 𝐬𝐞𝐧𝐭 𝐮𝐬𝐢𝐧𝐠 "#𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐌𝐨𝐯𝐢𝐞 𝐍𝐚𝐦𝐞 & 𝐑𝐞𝐥𝐞𝐚𝐬𝐞 𝐘𝐞𝐚𝐫.\n 𝐨𝐮𝐫 𝐠𝐫𝐞𝐚𝐭 𝐚𝐝𝐦𝐢𝐧𝐬 𝐰𝐢𝐥𝐥 𝐮𝐩𝐥𝐨𝐚𝐝 𝐢𝐭 𝐚𝐬 𝐬𝐨𝐨𝐧 𝐚𝐬 𝐩𝐨𝐬𝐬𝐢𝐛𝐥𝐞 !')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -717,7 +717,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Baby {u.mention} , Here is what i found for your query {search}"
+        cap = f"𝐒𝐚𝐡𝐞𝐛! 𝐌𝐮𝐣𝐡𝐞 𝐊𝐮𝐜𝐡 𝐌𝐢𝐥𝐚 𝐇𝐚𝐢 {search}"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -744,7 +744,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
+        k = await msg.reply("𝐇𝐞𝐲! 𝐌𝐮𝐣𝐡𝐞 𝐢𝐬 𝐧𝐚𝐚𝐦 𝐬𝐞 𝐤𝐨𝐢 𝐦𝐨𝐯𝐢𝐞 𝐧𝐡𝐢 𝐦𝐢𝐥𝐢, 𝐌𝐮𝐣𝐡𝐞 𝐥𝐠𝐭𝐚 𝐡𝐚𝐢 𝐤𝐢 𝐚𝐚𝐩𝐧𝐞 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐠𝐚𝐥𝐚𝐭 𝐥𝐢𝐤𝐡 𝐝𝐢𝐢 𝐡 🤷‍♀️!\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐨𝐧𝐜𝐞 𝐚𝐠𝐚𝐢𝐧 🤦‍♀️... 𝐨𝐫 \n 𝐉𝐨𝐢𝐧 @Filmykeedha .")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -773,7 +773,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("𝐇𝐞𝐲 {u.mention}! 𝐌𝐮𝐣𝐡𝐞 𝐢𝐬 𝐧𝐚𝐚𝐦 𝐬𝐞 𝐤𝐨𝐢 𝐦𝐨𝐯𝐢𝐞 𝐧𝐡𝐢 𝐦𝐢𝐥𝐢, 𝐌𝐮𝐣𝐡𝐞 𝐥𝐠𝐭𝐚 𝐡𝐚𝐢 𝐤𝐢 𝐚𝐚𝐩𝐧𝐞 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐠𝐚𝐥𝐚𝐭 𝐥𝐢𝐤𝐡 𝐝𝐢𝐢 𝐡 !\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐨𝐧𝐜𝐞 𝐚𝐠𝐚𝐢𝐧 ... 𝐨𝐫 \n 𝐉𝐨𝐢𝐧 @Filmykeedha ")
+        k = await msg.reply("𝐇𝐞𝐲 𝗕𝗿𝗼! 𝐌𝐮𝐣𝐡𝐞 𝐢𝐬 𝐧𝐚𝐚𝐦 𝐬𝐞 𝐤𝐨𝐢 𝐦𝐨𝐯𝐢𝐞 𝐧𝐡𝐢 𝐦𝐢𝐥𝐢, 𝐌𝐮𝐣𝐡𝐞 𝐥𝐠𝐭𝐚 𝐡𝐚𝐢 𝐤𝐢 𝐚𝐚𝐩𝐧𝐞 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐠𝐚𝐥𝐚𝐭 𝐥𝐢𝐤𝐡 𝐝𝐢𝐢 𝐡 !\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐨𝐧𝐜𝐞 𝐚𝐠𝐚𝐢𝐧 ... 𝐨𝐫 \n 𝐉𝐨𝐢𝐧 @Filmykeedha ")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -785,7 +785,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("𝐇𝐞𝐲 {u.mention}! 𝐌𝐮𝐣𝐡𝐞 𝐢𝐬 𝐧𝐚𝐚𝐦 𝐬𝐞 𝐤𝐨𝐢 𝐦𝐨𝐯𝐢𝐞 𝐧𝐡𝐢 𝐦𝐢𝐥𝐢, 𝐌𝐮𝐣𝐡𝐞 𝐥𝐠𝐭𝐚 𝐡𝐚𝐢 𝐤𝐢 𝐚𝐚𝐩𝐧𝐞 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐠𝐚𝐥𝐚𝐭 𝐥𝐢𝐤𝐡 𝐝𝐢𝐢 𝐡 !\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐨𝐧𝐜𝐞 𝐚𝐠𝐚𝐢𝐧 ... 𝐨𝐫 \n 𝐉𝐨𝐢𝐧 @Filmykeedha ",
+    await msg.reply("𝐇𝐞𝐲 𝗕𝗿𝗼! 𝐌𝐮𝐣𝐡𝐞 𝐢𝐬 𝐧𝐚𝐚𝐦 𝐬𝐞 𝐤𝐨𝐢 𝐦𝐨𝐯𝐢𝐞 𝐧𝐡𝐢 𝐦𝐢𝐥𝐢, 𝐌𝐮𝐣𝐡𝐞 𝐥𝐠𝐭𝐚 𝐡𝐚𝐢 𝐤𝐢 𝐚𝐚𝐩𝐧𝐞 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐠𝐚𝐥𝐚𝐭 𝐥𝐢𝐤𝐡 𝐝𝐢𝐢 𝐡 !\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐨𝐧𝐜𝐞 𝐚𝐠𝐚𝐢𝐧 ... 𝐨𝐫 \n 𝐉𝐨𝐢𝐧 @Filmykeedha ",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
