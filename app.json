@@ -92,27 +92,52 @@
             "required": false
         },
         "IMDB_TEMPLATE": {
-            "description": "Don't Edit It❌ ",
+            "description": "Don't Edit It ",
             "value": "",
             "required": false
         },
          "AUTH_GROUP": {
-            "description": "Don't Edit It❌ ",
+            "description": "Useless Function Not working",
             "value": "",
             "required": false
         },
          "LONG_IMDB_DESCRIPTION": {
-            "description": "Don't Edit It❌ ",
+            "description": "Show Long detail from IMDB",
             "value": "False",
             "required": false
         },
          "SPELL_CHECK_REPLY": {
-            "description": "Don't Edit It❌ ",
+            "description": "Currect Spelling or",
             "value": "True",
             "required": false
         },
          "MAX_LIST_ELM": {
+            "description": "Max File in List  ",
+            "value": "",
+            "required": false
+        },
+         "PROTECT_CONTENT": {
+            "description": "Forward Or Not Forward Content",
+            "value": "",
+            "required": false
+        },
+         "PUBLIC_FILE_STORE": {
+            "description": " I Dont Know about This",
+            "value": "",
+            "required": false
+        },
+         "MELCOW_NEW_USERS": {
             "description": "Don't Edit It❌ ",
+            "value": "",
+            "required": false
+        },
+         "IMDB": {
+            "description": "True To Show IMDB Name else No",
+            "value": "",
+            "required": false
+        },
+         "P_TTI_SHOW_OFF": {
+            "description": "True to Get File by Start. False to gee file direct PM",
             "value": "",
             "required": false
         }
